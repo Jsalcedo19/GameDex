@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = new Mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type: String,
         require: true,
@@ -10,11 +10,11 @@ const userSchema = new Mongoose.Schema({
         require: true,
     },
     password: {
-        type: number,
+        type: Number,
         require: true,
     },
-    favoritegame: {
-        type: [Mongoose.Schema.Types.ObjectId],
+    favoriteGames: {
+        type: [mongoose.Schema.Types.ObjectId],
         ref: 'Videogame'
     }
 });

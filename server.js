@@ -18,14 +18,14 @@ const authController = require("./controllers/auth.js");
 
 //middleware
 app.use("/auth", authController);
-
+app.use(express.urlencoded({ extended: false }));
 
 
 // GET routes 
 app.get("/", async (req, res) => {
     res.render("index.ejs");
   });
-
+  
   
   
 
@@ -36,5 +36,5 @@ app.get("/", async (req, res) => {
 
 // server Connection "Starts Server"
 app.listen(3000, () => {
-  console.log("Listening on port http://localhost:3000");
+  console.log("Express app ready at http://localhost:3000");
 });
