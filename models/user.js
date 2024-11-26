@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const videogameSchema = new Mongoose.Schema({
+const userSchema = new Mongoose.Schema({
     username: {
         type: String,
         require: true,
@@ -14,10 +14,10 @@ const videogameSchema = new Mongoose.Schema({
         require: true,
     },
     favoritegame: {
-        type: [mongoose.Schema.Types.ObjectId],
+        type: [Mongoose.Schema.Types.ObjectId],
         ref: 'Videogame'
     }
 });
 
-const Videogame = mongoose.model('Videogame',videogameSchema);
-module.exports = Videogame;
+const User = mongoose.model('User',userSchema);
+module.exports = User;
