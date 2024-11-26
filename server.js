@@ -23,7 +23,7 @@ app.use("/auth", authController);
 
 // GET routes 
 app.get("/", async (req, res) => {
-    res.send("hello, friend testing landing page!");
+    res.render("index.ejs");
   });
 
   
