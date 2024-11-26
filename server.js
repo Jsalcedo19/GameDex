@@ -6,6 +6,8 @@ dotenv.config();
 const express = require("express");
 const mongoose = require("mongoose");
 
+const port = process.env.PORT ? process.env.PORT : "3000";
+
 //express app created
 const app = express();
 
@@ -35,6 +37,6 @@ app.get("/", async (req, res) => {
 
 
 // server Connection "Starts Server"
-app.listen(3000, () => {
-  console.log("Express app ready at http://localhost:3000");
+app.listen(port, () => {
+  console.log(`The express app is ready on port http://localhost:${port}`);
 });
