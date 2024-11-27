@@ -13,7 +13,10 @@ const videogameSchema = new Mongoose.Schema({
         type: number,
         require: true,
     },
-    
+    isFavorite: {
+        type: Boolean,
+        default: false
+    }
 });
 
 const Videogame = mongoose.model('Videogame',videogameSchema);

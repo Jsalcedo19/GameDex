@@ -8,6 +8,11 @@ const methodOverride = require("method-override");
 const morgan = require("morgan");
 const session = require("express-session"); //imports express-session
 const authController = require("./controllers/auth.js"); //import authcontroller
+// server.js
+// server.js
+const isSignedIn = require('./middleware/is-signed-in.js');
+const passUserToView = require('./middleware/pass-user-to-view.js')
+
 
 
 //declare port
@@ -20,6 +25,9 @@ mongoose.connection.on("connected", () => {
 });
 
 //middleware
+app.use(passUserToView);
+app.use('/auth', authController);
+app.use(isSignedIn);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
