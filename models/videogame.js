@@ -11,8 +11,9 @@ const videogameSchema = new Mongoose.Schema({
     },
     date: {
         type: number,
-        require: true
-    }
+        require: true,
+    },
+    
 });
 
 const Videogame = mongoose.model('Videogame',videogameSchema);
