@@ -10,7 +10,7 @@ const videogameSchema = new mongoose.Schema({
         require: true,
     },
     date: {
-        type: number,
+        type: Number,
         require: true,
     },
     isFavorite: {
