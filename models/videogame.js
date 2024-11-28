@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const videogameSchema = new Mongoose.Schema({
+const videogameSchema = new mongoose.Schema({
     name: {
         type: String,
         require: true,

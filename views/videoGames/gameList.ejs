@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game List</title>
+</head>
+<body>
+  <h1>Video Game List</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Genre</th>
+        <th>Release Year</th>
+        <th>Favorite</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% games.forEach((game) => { %>
+        <tr>
+          <td><%= game.name %></td>
+          <td><%= game.genre %></td>
+          <td><%= game.date %></td>
+          <td><%= game.isFavorite ? "Yes" : "No" %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>
+
+</html>
