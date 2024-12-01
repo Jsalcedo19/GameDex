@@ -13,9 +13,10 @@ const videogameSchema = new mongoose.Schema({
         type: Number,
         require: true,
     },
-    isFavorite: {
-        type: Boolean,
-        default: false
+    rating: {
+        type: Number,
+        enum: [1, 2, 3, 4, 5],
+        require: false,
     }
 });
 

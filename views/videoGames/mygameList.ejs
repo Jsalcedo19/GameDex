@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>My Game List</title>
 </head>
+
 <body>
-    
+    <h1>My Game Collection</h1>
+
+    <!-- "games" is set as "user.favoriteGames" in the controller -> ('videoGames/mygameList', { games: user.favoriteGames }); -->
+
+    <% if (games && games.length> 0) { %>
+        <ul>
+            <% games.forEach(game=> { %>
+                <li>
+                    <strong>Name:</strong>
+                    <%= game.name %> <br>
+                        <strong>Genre:</strong>
+                        <%= game.genre %> <br>
+                            <strong>Release Year:</strong>
+                            <%= game.date %> <br>
+
+                                <form action="/videoGames/mygameList/<%= game._id %>?_method=PUT" method="POST">
+                                    <label for="rating-<%= game._id %>">Update Rating:</label>
+                                    <select name="rating" id="rating-<%= game._id %>" required>
+                                        <option value="1" <%=game.rating===1 ? "selected" : "" %>>1 - Poor</option>
+                                        <option value="2" <%=game.rating===2 ? "selected" : "" %>>2 - Fair</option>
+                                        <option value="3" <%=game.rating===3 ? "selected" : "" %>>3 - Good</option>
+                                        <option value="4" <%=game.rating===4 ? "selected" : "" %>>4 - Very Good</option>
+                                        <option value="5" <%=game.rating===5 ? "selected" : "" %>>5 - Excellent</option>
+                                    </select>
+                                    <button type="submit">Update</button>
+                                </form>
+                                <strong> Rating:</strong>
+                                <%= game.rating %> <br>
+                                    <form action="/videoGames/mygameList/<%= game._id %>?_method=DELETE" method="POST">
+                                        <button type="submit">Remove</button>
+                                    </form>
+                </li>
+                <% }) %>
+        </ul>
+        <% } else { %>
+            <p>No games in your collection yet!</p>
+            <% } %>
+                <a href="/videoGames/gameList">View All Video Games</a>
 </body>
+
 </html>

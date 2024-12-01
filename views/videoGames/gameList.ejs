@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game List</title>
-</head>
-<body>
-  <h1>Video Game List</h1>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Genre</th>
-        <th>Release Year</th>
-        <th>Favorite</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% games.forEach((game) => { %>
-        <tr>
-          <td><%= game.name %></td>
-          <td><%= game.genre %></td>
-          <td><%= game.date %></td>
-          <td><%= game.isFavorite ? "Yes" : "No" %></td>
-        </tr>
-      <% }) %>
-    </tbody>
-  </table>
-</body>
-</html>
+  <title>All Video Games</title>
+  </head>
+  <body>
+    <h1>All Video Games</h1>
+    <nav>
+      <% if(user) { %>
+        <a href="/users/<%= user._id %>/applications">Your Apps</a>
+        <a href="/auth/sign-out">Sign Out</a>
+      <% } else { %>
+        <a href="/auth/sign-in">Sign In</a>
+        <a href="/auth/sign-up">Sign Up</a>
+      <% } %>
+    </nav>
+    <% if (games && games.length > 0) { %>
+    <ul>
+      <% games.forEach(game => { %>
+      <li>
+        <strong>Name:</strong> <%= game.name %> <br />
+        <strong>Genre:</strong> <%= game.genre %> <br />
+        <strong>Release Year:</strong> <%= game.date %> <br />
+        
 
+        <!--Add to favorites button-->
+        <% const isFavorite = user.favoriteGames.includes(game._id.toString());
+        %> <% if (!isFavorite) { %>
+        <form
+          action="/videoGames/gameList/<%= game._id %>"
+          method="POST"
+        >
+          <button type="submit">Add to Favorites</button>
+        </form>
+        <% } else { %>
+        <p>Already in Favorites</p>
+        <% } %>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p>No video games found!</p>
+    <% } %>
+  </body>
 </html>

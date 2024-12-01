@@ -37,10 +37,10 @@ router.get('/sign-up', (req, res) => {
       // All ready to create the new user!
       await User.create(req.body);
     
-      res.redirect('/auth/sign-in');
+      res.redirect('/auth/sign-in'); //takes you to the sign in page 
     } catch (error) {
       console.log("Error in sign-in:", error);
-      res.redirect('/');
+      res.redirect('/'); //if error sends you to the home page
     }
   });
   
@@ -61,18 +61,19 @@ router.get('/sign-up', (req, res) => {
         return res.send('Login failed. Please try again.');
       }
     
-      // There is a user AND they had the correct password. Time to make a session!
+      // There is a user AND they had the correct password.
       // Avoid storing the password, even in hashed format, in the session
       // If there is other data you want to save to `req.session.user`, do so here!
       req.session.user = {
         username: userInDatabase.username,
         _id: userInDatabase._id
       };
-    
-      res.redirect('/');
+
+    // sends the user to their gamelist
+      res.redirect('/videoGames/mygameList');
     } catch (error) {
       console.log(error);
-      res.redirect('/');
+      res.redirect('/'); // if there is an error sends them to the home page
     }
   });
   
