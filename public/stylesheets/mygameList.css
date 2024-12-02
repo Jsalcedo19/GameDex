@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #2d3436;
+  }
+  
+  /* Game List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  li strong {
+    color: #6c5ce7;
+  }
+  
+  /* Forms */
+  form {
+    margin-top: 10px;
+  }
+  
+  form label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #2d3436;
+    font-weight: bold;
+  }
+  
+  form select {
+    padding: 5px;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #74b9ff;
+  }
+  
+  /* "No Games Found" Message */
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #d63031;
+  }
+  
+  /* Remove Button */
+  form[action*="DELETE"] button {
+    background-color: #d63031;
+    margin-top: 5px;
+  }
+  
+  form[action*="DELETE"] button:hover {
+    background-color: #e17055;
+  }
+  
+  /* Navigation Link */
+  a {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #00cec9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    li {
+      padding: 10px;
+    }
+  
+    form select, form button {
+      font-size: 12px;
+    }
+  }
+  
