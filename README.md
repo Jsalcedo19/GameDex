@@ -27,7 +27,7 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 
 
 ## ERD Diagram
-![alt text](image.png)       
+![ERD](https://github.com/Jsalcedo19/GameDex/blob/main/public/ERD%20diagram.png)       
 
 ## Wire Frames
 - Home Page
