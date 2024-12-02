@@ -82,6 +82,7 @@ Timeline:
 #### References:
 - https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
 - https://www.geeksforgeeks.org/css-tutorial/?ref=gcse_outind
-- Chat GPT
+- Chat GPT 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 - https://generalassembly.instructure.com/courses/573/assignments/11966
+- https://tympanus.net/codrops/css_reference/#section_css-property
