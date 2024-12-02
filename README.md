@@ -7,21 +7,22 @@
 ## Project Description 
 The Game Catalog App is a simple and user-friendly web application designed to allow users to manage their personal game library. The app enables users to add, view, update, and delete game entries while providing options for filtering and organizing their collection. Built with the MEN (MongoDB, Express, Node.js) stack, the app is lightweight, scalable, and optimized for simplicity and usability.
 
-## Routing Table 
+## Routing Table
 
-| HTTP Method (Verb) | Path/Endpoint/URI | CRUD Operation | Description                          |------------------ | --------------------- | ----------------------------- |
-| GET | `/auth/sign`      | Read   | Displays form sign-in or sign-up.
-| POST| `/auth/sign-up`   | Create | Adds sign-up form.
-| GET | `/auth/sign-in`   | Read   | Displays sign-in form.
-| POST| `/auth/sign-in`   | Create | Adds sing-in form.
-| GET | `/auth/sign-out`  | Read   | Signs user out of page.
-| GET | `/videogames`     | Read   | Displays a list of videogames.
-| GET | `/videogames/new` | Read   | Shows a form to add.
-| POST| `/videogames`     | Create | Adds a new videogame to the collection        
-| GET | `/videogames/:videogameId`     | Read   | Displays specific videogame.
-| POST| `/videogames/:videogameId/edit`| Read   | Shows form to edit specific videogame.
-| PUT | `/videogames/:videogameId`     | Update | Updates specific videogame info.
-| DELETE | `/videogames/:videogameId`  | Delete | Removes specific videogame from collection.                                            
+| HTTP Method (Verb) | Path/Endpoint/URI          | CRUD Operation | Description                                    |
+|---------------------|---------------------------|----------------|------------------------------------------------|
+| GET                 | `/auth/sign`             | Read           | Displays form to sign in or sign up.          |
+| POST                | `/auth/sign-up`          | Create         | Handles submission of sign-up form.           |
+| GET                 | `/auth/sign-in`          | Read           | Displays the sign-in form.                    |
+| POST                | `/auth/sign-in`          | Create         | Handles submission of sign-in form.           |
+| GET                 | `/auth/sign-out`         | Read           | Logs the user out and redirects to a page.    |
+| GET                 | `/videogames`            | Read           | Displays a list of video games.               |
+| GET                 | `/videogames/new`        | Read           | Shows a form to add a new video game.         |
+| POST                | `/videogames`            | Create         | Adds a new video game to the collection.      |
+| GET                 | `/videogames/:videogameId` | Read           | Displays details of a specific video game.    |
+| GET                 | `/videogames/:videogameId/edit` | Read      | Displays form to edit a specific video game.  |
+| PUT                 | `/videogames/:videogameId` | Update        | Updates a specific video game.                |
+| DELETE              | `/videogames/:videogameId` | Delete        | Removes a specific video game from the collection. |
 
 
 
