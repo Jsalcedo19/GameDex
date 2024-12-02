@@ -4,27 +4,20 @@
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>GameDex</title>
 
    
   </head>
-  <body>
+  <body class="index-body">
+    <%- include('./partials/_navbar.ejs') %>
     <header>
-      <h1>Welcome to GameDex!</h1>
-      <p>Your ultimate app for managing your video game collection.</p>
+    <div class="index-container">
+        <div class="text-container">
+      <h1 class="main-header">Welcome to GameDex!</h1>
+      <p class="subheader">Your ultimate app for managing your video game collection.</p>
+        </div>
     </header>
-    <main>
-      <p>
-        Whether you're a casual gamer or a hardcore enthusiast, GameDex helps
-        you organize and track all your favorite games in one place!
-      </p>
-      <p>Join our growing community today:</p>
-      <a href="/auth/sign-up">Sign Up</a>
-      <a href="/auth/sign-in">Sign In</a>
-    </main>
-    <footer>
-      <p>&copy; <%= new Date().getFullYear() %> GameDex. All rights reserved.</p>
-    </footer>
+    </div>
   </body>
 </html>

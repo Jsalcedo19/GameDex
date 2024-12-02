@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/views/videoGames/gameList.css" />
   <title>All Video Games</title>
   </head>
   <body>
     <h1>All Video Games</h1>
     <nav>
       <% if(user) { %>
-        <a href="/users/<%= user._id %>/applications">Your Apps</a>
         <a href="/auth/sign-out">Sign Out</a>
       <% } else { %>
         <a href="/auth/sign-in">Sign In</a>

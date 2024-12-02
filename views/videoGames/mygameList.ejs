@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>My Game List</title>
 </head>
 
 <body>
     <h1>My Game Collection</h1>
 
-    <!-- "games" is set as "user.favoriteGames" in the controller -> ('videoGames/mygameList', { games: user.favoriteGames }); -->
-
-    <% if (games && games.length> 0) { %>
+     <% if (games && games.length> 0) { %>
         <ul>
             <% games.forEach(game=> { %>
                 <li>
