@@ -54,7 +54,7 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 
 
 #### Stretch Goals
-
+- AAU, I want to be able to see game box art and images of the videogame.
 - AAU, I want to be able to add future games I plan to buy or play in the future.
 - AAU, I want to be able to share my game catalog with my friends.
 
