@@ -59,6 +59,10 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 - AAU, I want to be able to share my game catalog with my friends.
 
 
+### References:
+https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
+
+
 #### Timeline - Daily Accountability
 
 Timeline:
