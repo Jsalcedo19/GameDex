@@ -15,6 +15,7 @@ const gameController = require("./controllers/gameController.js");
 
 //declare port
 const PORT = process.env.PORT ? process.env.PORT : "3000";
+//const SESSION_SECRET = process.env.SESSION_SECRET;
 
 const path = require('path');
 //set ejs as the view engine, so .ejs files can be rendered
@@ -36,7 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //manages user sessions with secret key for security
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
   })
