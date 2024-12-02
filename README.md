@@ -36,10 +36,10 @@ The Game Catalog App is a simple and user-friendly web application designed to a
  ![Page 2](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page2%202.jpg)
 
 - Login Page
-![alt text](<Page3 2.jpg>)
+![Page 3](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page3%202.jpg)
 
 - Game Catalog Page
-![alt text](<Page4 2.jpg>)
+![Page 4](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page4%202.jpg)
 
 
 ## User Stories
