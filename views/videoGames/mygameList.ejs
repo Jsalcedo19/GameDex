@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/mygameList.css" />
     <title>My Game List</title>
+    <nav>
+        <% if(user) { %>
+            <a href="/auth/sign-out">Sign Out</a>
+            <% } else { %>
+                <a href="/auth/sign-in">Sign In</a>
+                <a href="/auth/sign-up">Sign Up</a>
+                <% } %>
 </head>
 
 <body>
@@ -21,6 +28,8 @@
                         <%= game.genre %> <br>
                             <strong>Release Year:</strong>
                             <%= game.date %> <br>
+
+                            <img src="<%= game.image %>" alt="<%= game.name %>" class="game-image">
 
                                 <form action="/videoGames/mygameList/<%= game._id %>?_method=PUT" method="POST">
                                     <label for="rating-<%= game._id %>">Update Rating:</label>

@@ -6,16 +6,16 @@
   <link rel="stylesheet" href="/stylesheets/gameList.css" />
   <title>All Video Games</title>
   </head>
+  <nav>
+    <% if(user) { %>
+      <a href="/auth/sign-out">Sign Out</a>
+    <% } else { %>
+      <a href="/auth/sign-in">Sign In</a>
+      <a href="/auth/sign-up">Sign Up</a>
+    <% } %>
+  </nav>
   <body>
     <h1>All Video Games</h1>
-    <nav>
-      <% if(user) { %>
-        <a href="/auth/sign-out">Sign Out</a>
-      <% } else { %>
-        <a href="/auth/sign-in">Sign In</a>
-        <a href="/auth/sign-up">Sign Up</a>
-      <% } %>
-    </nav>
     <% if (games && games.length > 0) { %>
     <ul>
       <% games.forEach(game => { %>
