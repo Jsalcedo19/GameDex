@@ -1,168 +1,174 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(112, 120, 130, 0.315),
+      rgba(31, 32, 101, 0.9)
+    ),
+    url("/images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #bc4212;
+  color: #343a40;
+}
+
+body a {
+  font-family: "Arial", sans-serif;
+  color: #343a40;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2d3436;
+}
+
+/* Game List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  border-color: black;
+}
+
+li {
+  background-color: #57809b6d;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Allows positioning of the image */
+  padding-right: 120px; /* Add space on the right for the image */
+}
+
+li strong {
+  color: #6c5ce7;
+}
+.game-image {
+  position: absolute; /* Position the image within the list item */
+  top: 40%; /* Center vertically */
+  right: 10%; /* Align to the right */
+  transform: translateY(-50%); /* Adjust to vertical center */
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form {
+  margin-top: 10px;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 10px;
+  color: #2d3436;
+  font-weight: bold;
+}
+
+form select {
+  padding: 5px;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+form button {
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #42596f;
+}
+
+/* "No Games Found" Message */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #d63031;
+}
+
+/* Remove Button */
+form[action*="DELETE"] button {
+  background-color: #d63031;
+  margin-top: 5px;
+}
+
+form[action*="DELETE"] button:hover {
+  background-color: #e17055;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  white-space: nowrap; /* Prevent links from wrapping */
+}
+
+nav a {
+  display: inline-block;
+  color: #00beee;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  vertical-align: middle; /* Align links vertically in the same line */
+}
+
+/* Specific Style for Sign Out */
+nav a[href="/auth/sign-out"] {
+  background-color: #e74c3c; /* Red background for Sign Out */
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+  float: right; /* Push Sign Out to the right */
+}
+
+nav a[href="/auth/sign-out"]:hover {
+  background-color: #c0392b; /* Darker red for hover */
+  text-decoration: none; /* Remove underline on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Hover Effects for Other Links */
+nav a:hover {
+  background-color: #2c3e50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
   }
 
-  body a{
-    font-family: 'Arial', sans-serif;
-    color: #343a40;
-  }
-  
-  /* Header */
-  h1 {
-    text-align: center;
-    margin: 20px 0;
-    color: #2d3436;
-  }
-  
-  /* Game List */
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 20px;
-    border-color: black;
-  }
-  
   li {
-    background-color: #ffffff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative; /* Allows positioning of the image */
-    padding-right: 120px; /* Add space on the right for the image */
+    padding: 10px;
   }
-  
-  li strong {
-    color: #6c5ce7;
-  }
-  .game-image {
-    position: absolute; /* Position the image within the list item */
-    top: 40%; /* Center vertically */
-    right: 10%; /* Align to the right */
-    transform: translateY(-50%); /* Adjust to vertical center */
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-  
-  /* Forms */
-  form {
-    margin-top: 10px;
-  }
-  
-  form label {
-    display: inline-block;
-    margin-right: 10px;
-    color: #2d3436;
-    font-weight: bold;
-  }
-  
-  form select {
-    padding: 5px;
-    border: 1px solid #dfe6e9;
-    border-radius: 5px;
-    font-size: 14px;
-    outline: none;
-  }
-  
+
+  form select,
   form button {
-    background-color: #0984e3;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
+    font-size: 12px;
   }
-  
-  form button:hover {
-    background-color: #74b9ff;
-  }
-  
-  /* "No Games Found" Message */
-  p {
-    text-align: center;
-    font-size: 18px;
-    color: #d63031;
-  }
-  
-  /* Remove Button */
-  form[action*="DELETE"] button {
-    background-color: #d63031;
-    margin-top: 5px;
-  }
-  
-  form[action*="DELETE"] button:hover {
-    background-color: #e17055;
-  }
-  
-  
-  /* Navigation Bar */
-nav {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    white-space: nowrap; /* Prevent links from wrapping */
-  }
-  
-  nav a {
-    display: inline-block;
-    color:  #00beee;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    vertical-align: middle; /* Align links vertically in the same line */
-  }
-  
-  /* Specific Style for Sign Out */
-  nav a[href="/auth/sign-out"] {
-    background-color: #e74c3c; /* Red background for Sign Out */
-    color: #fff; /* White text for contrast */
-    font-weight: bold;
-    float: right; /* Push Sign Out to the right */
-  }
-  
-  nav a[href="/auth/sign-out"]:hover {
-    background-color: #c0392b; /* Darker red for hover */
-    text-decoration: none; /* Remove underline on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-  }
-  
-  /* Hover Effects for Other Links */
-  nav a:hover {
-    background-color: #2c3e50;
-  }
-  
-  
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-  
-    li {
-      padding: 10px;
-    }
-  
-    form select, form button {
-      font-size: 12px;
-    }
-    
-  }
-  
+}

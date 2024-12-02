@@ -29,7 +29,6 @@
                             <strong>Release Year:</strong>
                             <%= game.date %> <br>
 
-                            <img src="<%= game.image %>" alt="<%= game.name %>" class="game-image">
 
                                 <form action="/videoGames/mygameList/<%= game._id %>?_method=PUT" method="POST">
                                     <label for="rating-<%= game._id %>">Update Rating:</label>

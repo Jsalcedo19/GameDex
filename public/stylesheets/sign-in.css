@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f7;
+    background-image: linear-gradient(to bottom, rgba(112, 120, 130, 0.315), rgba(31, 32, 101, 0.9)), url('/images/header-bg.jpg');
     color: #333;
     display: flex;
     flex-direction: column; /* Allows stacking of elements (h1, form) */
@@ -16,16 +16,16 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #bc4212;
     font-size: 24px;
   }
   
   /* Form Container */
   form {
-    background-color: #ffffff;
+    background-color: #c8cbcf;
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;

@@ -59,10 +59,6 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 - AAU, I want to be able to share my game catalog with my friends.
 
 
-### References:
-https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
-
-
 #### Timeline - Daily Accountability
 
 Timeline:
@@ -81,3 +77,11 @@ Timeline:
 | Sunday     |   | Testing & Deployment               | Testing Phase         |                 
 | Monday     |   | Testing & Deployment               | Test & Delpoyment     |                 
 | Tuesday    |   | Presentatio day                    | Fully deployment      |                 
+
+
+#### References:
+- https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
+- https://www.geeksforgeeks.org/css-tutorial/?ref=gcse_outind
+- Chat GPT
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+- https://generalassembly.instructure.com/courses/573/assignments/11966
