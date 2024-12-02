@@ -14,7 +14,7 @@ const gameController = require("./controllers/gameController.js");
 
 
 //declare port
-const port = process.env.PORT ? process.env.PORT : "3000";
+const PORT = process.env.PORT ? process.env.PORT : "3000";
 
 const path = require('path');
 //set ejs as the view engine, so .ejs files can be rendered
@@ -56,6 +56,6 @@ app.use('/videoGames', gameController); // Handles all routes starting with "/vi
 
 
 // server Connection "Starts Server"
-app.listen(port, () => {
-  console.log(`The express app is ready on port http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`The express app is ready on port http://localhost:${PORT}`);
 });
