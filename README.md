@@ -30,10 +30,10 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 
 ## Wire Frames
 - Home Page
- ![<Page1 2.jpg>](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page1%202.jpg)
+ ![Page 1](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page1%202.jpg)
 
 - Registration Page
- ![alt text](<Page2 2.jpg>)
+ ![Page 2](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page2%202.jpg)
 
 - Login Page
 ![alt text](<Page3 2.jpg>)
