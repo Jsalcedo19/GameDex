@@ -31,16 +31,22 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 
 ## Wire Frames
 - Home Page
- ![Page 1](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page1%202.jpg)
+![62BA98CE-A813-4446-9234-C3670CE0F125](https://github.com/user-attachments/assets/9847b85f-5adf-4a78-af1e-ea16d2e98bd1)
+
 
 - Registration Page
- ![Page 2](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page2%202.jpg)
+![B55B0FEA-131F-4246-A615-04AF2EE64A0D](https://github.com/user-attachments/assets/b6072634-c098-4c71-bb99-47cbbc635d6c)
+
 
 - Login Page
-![Page 3](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page3%202.jpg)
+![2FB926BB-637C-4103-90AA-0368E5F5345B](https://github.com/user-attachments/assets/c144b110-0908-459d-9861-b91f85603e44)
+
+
+- My Game Catalog Page
+![DFD76732-00ED-482C-96BE-437B51658542](https://github.com/user-attachments/assets/cac41281-a2b6-4065-ab57-debea8d6177d)
 
 - Game Catalog Page
-![Page 4](https://github.com/Jsalcedo19/GameDex/blob/main/public/Page4%202.jpg)
+![DA0BD0C8-87EF-48DD-9707-20182E79470A](https://github.com/user-attachments/assets/0f45f8b1-d1af-4cc6-acaa-c42f90c22ecf)
 
 
 ## User Stories
