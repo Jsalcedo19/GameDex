@@ -55,7 +55,7 @@ The Game Catalog App is a simple and user-friendly web application designed to a
 - **AAU,** I want to add a new game to my catalog by providing details such as title, type, and release date so that I can keep track of games I own or want to play.
 - **AAU,** I want to see a list of all games in my catalog so that I can review what I have tracked so far.
 - **AAU,** I want to update the details of a game (e.g., change the status of completed or not completed) so that I can keep my catalog accurate and up to date.
-- **AAU,** I want to filter games by genre or platform so that I can focus on specific types of games. 
+- **AAU,** I want to remove games from my catalog I no longer own or have completed. 
 
 
 
@@ -82,8 +82,7 @@ Timeline:
 | Saturday   |   | Frontend Setup                     | EJS setup             |                 
 | Sunday     |   | Testing & Deployment               | Testing Phase         |                 
 | Monday     |   | Testing & Deployment               | Test & Delpoyment     |                 
-| Tuesday    |   | Presentatio day                    | Fully deployment      |                 
-
+| Tuesday    |   | Presentation day                    | Fully deployment      |                 
 
 #### References:
 - https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
@@ -92,3 +91,6 @@ Timeline:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 - https://generalassembly.instructure.com/courses/573/assignments/11966
 - https://tympanus.net/codrops/css_reference/#section_css-property
+
+  #### Deployed GameDex app
+  - Deployed project link: https://gamedex-2d3236169dad.herokuapp.com/
